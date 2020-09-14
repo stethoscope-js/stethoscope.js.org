@@ -1,0 +1,19 @@
+{
+  "name": "stethoscope.js.org",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stethoscope-js/stethoscope.js.org.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/stethoscope-js/stethoscope.js.org/issues"
+  },
+  "homepage": "https://github.com/stethoscope-js/stethoscope.js.org#readme"
+}
