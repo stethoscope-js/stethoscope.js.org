@@ -85,13 +85,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-
           editUrl:
             "https://github.com/stethoscope-js/stethoscope.js.org/blob/master/",
         },
         blog: {
           showReadingTime: true,
-
           editUrl:
             "https://github.com/stethoscope-js/stethoscope.js.org/blob/master/blog/",
         },

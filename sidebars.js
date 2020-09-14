@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    "Getting started": ["1-getting-started"],
+    Integrations: ["google-fit"],
+    "Stethoscope.js.org": ["styleguide"],
   },
 };
