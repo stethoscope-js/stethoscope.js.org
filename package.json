@@ -3,17 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stethoscope-js/stethoscope.js.org.git"
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-alpha.64",
+    "@docusaurus/preset-classic": "2.0.0-alpha.64",
+    "@mdx-js/react": "^1.5.8",
+    "clsx": "^1.1.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
-  "keywords": [],
-  "author": "",
-  "license": "CC-BY-4.0",
-  "bugs": {
-    "url": "https://github.com/stethoscope-js/stethoscope.js.org/issues"
-  },
-  "homepage": "https://github.com/stethoscope-js/stethoscope.js.org#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
