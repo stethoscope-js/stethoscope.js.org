@@ -23,6 +23,14 @@ config:
     entries: true
 ```
 
+If you want to enable all data points, you can simply use `all` instead:
+
+```yaml title=".stethoscoperc.yml"
+config:
+  clockify:
+    all: true
+```
+
 Sensitive information such as project ID, workspace ID, item ID, user ID, and entry description are automatically removed.
 
 ## Authentication

@@ -2,148 +2,148 @@
 title: Google Fit
 ---
 
-The Google Fit API is used to track your health and activity information. Add the key `googleFit` under `daily` to fetch this data every day:
+The Google Fit API is used to track your health and activity information. Add the key `google-fit` under `daily` to fetch this data every day:
 
 ```yaml title=".stethoscoperc.yml"
 daily:
-  - googleFit
+  - google-fit
 ```
 
 ## Data points
 
 The following data points are available for this integration:
 
-| Data point                         | Description |
-| ---------------------------------- | ----------- |
-| `aerobics`                         | OK          |
-| `archery`                          | OK          |
-| `badminton`                        | OK          |
-| `baseball`                         | OK          |
-| `basketball`                       | OK          |
-| `biathlon`                         | OK          |
-| `biking`                           | OK          |
-| `biking-hand`                      | OK          |
-| `biking-mountain`                  | OK          |
-| `biking-road`                      | OK          |
-| `biking-spinning`                  | OK          |
-| `biking-stationary`                | OK          |
-| `biking-utility`                   | OK          |
-| `boxing`                           | OK          |
-| `calisthenics`                     | OK          |
-| `circuit-training`                 | OK          |
-| `cricket`                          | OK          |
-| `crossfit`                         | OK          |
-| `curling`                          | OK          |
-| `dancing`                          | OK          |
-| `diving`                           | OK          |
-| `elevator`                         | OK          |
-| `elliptical`                       | OK          |
-| `ergometer`                        | OK          |
-| `escalator`                        | OK          |
-| `extra-status`                     | OK          |
-| `fencing`                          | OK          |
-| `football-american`                | OK          |
-| `football-australian`              | OK          |
-| `football-soccer`                  | OK          |
-| `frisbee-disc`                     | OK          |
-| `gardening`                        | OK          |
-| `golf`                             | OK          |
-| `guided-breathing`                 | OK          |
-| `gymnastics`                       | OK          |
-| `handball`                         | OK          |
-| `high-intensity-interval-training` | OK          |
-| `hiking`                           | OK          |
-| `hockey`                           | OK          |
-| `horseback-riding`                 | OK          |
-| `housework`                        | OK          |
-| `ice-skating`                      | OK          |
-| `interval-training`                | OK          |
-| `in-vehicle`                       | OK          |
-| `jump-rope`                        | OK          |
-| `kayaking`                         | OK          |
-| `kettlebell-training`              | OK          |
-| `kickboxing`                       | OK          |
-| `kick-scooter`                     | OK          |
-| `kitesurfing`                      | OK          |
-| `martial-arts`                     | OK          |
-| `meditation`                       | OK          |
-| `mime-type-prefix`                 | OK          |
-| `mixed-martial-arts`               | OK          |
-| `on-foot`                          | OK          |
-| `other`                            | OK          |
-| `p90x`                             | OK          |
-| `paragliding`                      | OK          |
-| `pilates`                          | OK          |
-| `polo`                             | OK          |
-| `racquetball`                      | OK          |
-| `rock-climbing`                    | OK          |
-| `rowing`                           | OK          |
-| `rowing-machine`                   | OK          |
-| `rugby`                            | OK          |
-| `running`                          | OK          |
-| `running-jogging`                  | OK          |
-| `running-sand`                     | OK          |
-| `running-treadmill`                | OK          |
-| `sailing`                          | OK          |
-| `scuba-diving`                     | OK          |
-| `skateboarding`                    | OK          |
-| `skating`                          | OK          |
-| `skating-cross`                    | OK          |
-| `skating-indoor`                   | OK          |
-| `skating-inline`                   | OK          |
-| `skiing`                           | OK          |
-| `skiing-back-country`              | OK          |
-| `skiing-cross-country`             | OK          |
-| `skiing-downhill`                  | OK          |
-| `skiing-kite`                      | OK          |
-| `skiing-roller`                    | OK          |
-| `sledding`                         | OK          |
-| `sleep`                            | OK          |
-| `sleep-awake`                      | OK          |
-| `sleep-deep`                       | OK          |
-| `sleep-light`                      | OK          |
-| `sleep-rem`                        | OK          |
-| `snowboarding`                     | OK          |
-| `snowmobile`                       | OK          |
-| `snowshoeing`                      | OK          |
-| `softball`                         | OK          |
-| `squash`                           | OK          |
-| `stair-climbing`                   | OK          |
-| `stair-climbing-machine`           | OK          |
-| `standup-paddleboarding`           | OK          |
-| `status-active`                    | OK          |
-| `status-completed`                 | OK          |
-| `still`                            | OK          |
-| `strength-training`                | OK          |
-| `surfing`                          | OK          |
-| `swimming`                         | OK          |
-| `swimming-open-water`              | OK          |
-| `swimming-pool`                    | OK          |
-| `table-tennis`                     | OK          |
-| `team-sports`                      | OK          |
-| `tennis`                           | OK          |
-| `tilting`                          | OK          |
-| `treadmill`                        | OK          |
-| `unknown`                          | OK          |
-| `volleyball`                       | OK          |
-| `volleyball-beach`                 | OK          |
-| `volleyball-indoor`                | OK          |
-| `wakeboarding`                     | OK          |
-| `walking`                          | OK          |
-| `walking-fitness`                  | OK          |
-| `walking-nordic`                   | OK          |
-| `walking-stroller`                 | OK          |
-| `walking-treadmill`                | OK          |
-| `water-polo`                       | OK          |
-| `weightlifting`                    | OK          |
-| `wheelchair`                       | OK          |
-| `windsurfing`                      | OK          |
-| `yoga`                             | OK          |
-| `zumba`                            | OK          |
+| Data point                         | Description              |
+| ---------------------------------- | ------------------------ |
+| `aerobics`                         | Aerobics                 |
+| `archery`                          | Archery                  |
+| `badminton`                        | Badminton                |
+| `baseball`                         | Baseball                 |
+| `basketball`                       | Basketball               |
+| `biathlon`                         | Biathlon                 |
+| `biking`                           | Biking                   |
+| `biking-hand`                      | Biking (hand)            |
+| `biking-mountain`                  | Biking (mountain)        |
+| `biking-road`                      | Biking (road)            |
+| `biking-spinning`                  | Biking (spinning)        |
+| `biking-stationary`                | Biking (stationary)      |
+| `biking-utility`                   | Biking (utility)         |
+| `boxing`                           | Boxing                   |
+| `calisthenics`                     | Calisthenics             |
+| `circuit-training`                 | Circuit training         |
+| `cricket`                          | Cricket                  |
+| `crossfit`                         | Crossfit                 |
+| `curling`                          | Curling                  |
+| `dancing`                          | Dancing                  |
+| `diving`                           | Diving                   |
+| `elevator`                         | Elevator                 |
+| `elliptical`                       | Elliptical               |
+| `ergometer`                        | Ergometer                |
+| `escalator`                        | Escalator                |
+| `extra-status`                     | Extra status             |
+| `fencing`                          | Fencing                  |
+| `football-american`                | Football (American)      |
+| `football-australian`              | Football (Australian)    |
+| `football-soccer`                  | Football (soccer)        |
+| `frisbee-disc`                     | Frisbee disc             |
+| `gardening`                        | Gardening                |
+| `golf`                             | Golf                     |
+| `guided-breathing`                 | Guided breathing         |
+| `gymnastics`                       | Gymnastics               |
+| `handball`                         | Handball                 |
+| `high-intensity-interval-training` | HIIT                     |
+| `hiking`                           | Hiking                   |
+| `hockey`                           | Hockey                   |
+| `horseback-riding`                 | Horseback riding         |
+| `housework`                        | Housework                |
+| `ice-skating`                      | Ice skating              |
+| `interval-training`                | Interval training        |
+| `in-vehicle`                       | In vehicle               |
+| `jump-rope`                        | Jump rope                |
+| `kayaking`                         | Kayaking                 |
+| `kettlebell-training`              | Kettlebell training      |
+| `kickboxing`                       | Kickboxing               |
+| `kick-scooter`                     | Kick scooter             |
+| `kitesurfing`                      | Kitesurfing              |
+| `martial-arts`                     | Martial arts             |
+| `meditation`                       | Meditation               |
+| `mime-type-prefix`                 | Mime type prefix         |
+| `mixed-martial-arts`               | Mixed martial arts       |
+| `on-foot`                          | On foot                  |
+| `other`                            | Other                    |
+| `p90x`                             | P90x                     |
+| `paragliding`                      | Paragliding              |
+| `pilates`                          | Pilates                  |
+| `polo`                             | Polo                     |
+| `racquetball`                      | Racquetball              |
+| `rock-climbing`                    | Rock climbing            |
+| `rowing`                           | Rowing                   |
+| `rowing-machine`                   | Rowing machine           |
+| `rugby`                            | Rugby                    |
+| `running`                          | Running                  |
+| `running-jogging`                  | Running (jogging)        |
+| `running-sand`                     | Running (sand)           |
+| `running-treadmill`                | Running (treadmill)      |
+| `sailing`                          | Sailing                  |
+| `scuba-diving`                     | Scuba diving             |
+| `skateboarding`                    | Skateboarding            |
+| `skating`                          | Skating                  |
+| `skating-cross`                    | Skating (cross)          |
+| `skating-indoor`                   | Skating (indoor)         |
+| `skating-inline`                   | Skating (inline)         |
+| `skiing`                           | Skiing                   |
+| `skiing-back-country`              | Skiing (back country)    |
+| `skiing-cross-country`             | Skiing (cross country)   |
+| `skiing-downhill`                  | Skiing (downhill)        |
+| `skiing-kite`                      | Skiing (kite)            |
+| `skiing-roller`                    | Skiing (roller)          |
+| `sledding`                         | Sledding                 |
+| `sleep`                            | Sleep                    |
+| `sleep-awake`                      | Sleep awake              |
+| `sleep-deep`                       | Sleep deep               |
+| `sleep-light`                      | Sleep light              |
+| `sleep-rem`                        | Sleep rem                |
+| `snowboarding`                     | Snowboarding             |
+| `snowmobile`                       | Snowmobile               |
+| `snowshoeing`                      | Snowshoeing              |
+| `softball`                         | Softball                 |
+| `squash`                           | Squash                   |
+| `stair-climbing`                   | Stair climbing           |
+| `stair-climbing-machine`           | Stair climbing (machine) |
+| `standup-paddleboarding`           | Standup paddleboarding   |
+| `status-active`                    | Status active            |
+| `status-completed`                 | Status completed         |
+| `still`                            | Still                    |
+| `strength-training`                | Strength training        |
+| `surfing`                          | Surfing                  |
+| `swimming`                         | Swimming                 |
+| `swimming-open-water`              | Swimming (open water)    |
+| `swimming-pool`                    | Swimming (pool)          |
+| `table-tennis`                     | Table tennis             |
+| `team-sports`                      | Team sports              |
+| `tennis`                           | Tennis                   |
+| `tilting`                          | Tilting                  |
+| `treadmill`                        | Treadmill                |
+| `unknown`                          | Unknown                  |
+| `volleyball`                       | Volleyball               |
+| `volleyball-beach`                 | Volleyball (beach)       |
+| `volleyball-indoor`                | Volleyball (indoor)      |
+| `wakeboarding`                     | Wakeboarding             |
+| `walking`                          | Walking                  |
+| `walking-fitness`                  | Walking (fitness)        |
+| `walking-nordic`                   | Walking (nordic)         |
+| `walking-stroller`                 | Walking (stroller)       |
+| `walking-treadmill`                | Walking (treadmill)      |
+| `water-polo`                       | Water polo               |
+| `weightlifting`                    | Weightlifting            |
+| `wheelchair`                       | Wheelchair               |
+| `windsurfing`                      | Windsurfing              |
+| `yoga`                             | Yoga                     |
+| `zumba`                            | Zumba                    |
 
 ```yaml title=".stethoscoperc.yml"
 config:
-  googleFit:
+  google-fit:
     aerobics: true
     archery: true
     badminton: true
@@ -269,6 +269,14 @@ config:
     windsurfing: true
     yoga: true
     zumba: true
+```
+
+If you want to enable all data points, you can simply use `all` instead:
+
+```yaml title=".stethoscoperc.yml"
+config:
+  google-fit:
+    all: true
 ```
 
 ## Authentication

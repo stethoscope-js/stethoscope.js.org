@@ -29,6 +29,14 @@ config:
     activity: true
 ```
 
+If you want to enable all data points, you can simply use `all` instead:
+
+```yaml title=".stethoscoperc.yml"
+config:
+  oura-ring:
+    all: true
+```
+
 ## Authentication
 
 The Oura API requires a Personal Access Token which can be generated on the [Personal Access Tokens](https://cloud.ouraring.com/personal-access-tokens) page on the Oura website. Click on the "Create A New Personal Access Token" button and enter a note for the token. Then, copy the generate token.

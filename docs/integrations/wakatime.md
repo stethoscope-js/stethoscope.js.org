@@ -23,6 +23,14 @@ config:
     summary: true
 ```
 
+If you want to enable all data points, you can simply use `all` instead:
+
+```yaml title=".stethoscoperc.yml"
+config:
+  wakatime:
+    all: true
+```
+
 ## Authentication
 
 You need to provide your WakaTime API key, which is available on the [Settings](https://wakatime.com/settings/account) page on the WakaTime website. Under "API key", click on "[click to show]" to view the API key and copy it.

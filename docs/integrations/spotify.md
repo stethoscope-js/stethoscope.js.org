@@ -15,20 +15,28 @@ daily:
 
 The following data points are available for this integration:
 
-| Data point   | Description       |
-| ------------ | ----------------- |
-| `history`    | Listening history |
-| `library`    | Library           |
-| `topTracks`  | Top tracks        |
-| `topArtists` | Top artists       |
+| Data point    | Description       |
+| ------------- | ----------------- |
+| `history`     | Listening history |
+| `library`     | Library           |
+| `top-tracks`  | Top tracks        |
+| `top-artists` | Top artists       |
 
 ```yaml title=".stethoscoperc.yml"
 config:
   spotify:
     history: true
     library: true
-    topTracks: true
-    topArtists: true
+    top-tracks: true
+    top-artists: true
+```
+
+If you want to enable all data points, you can simply use `all` instead:
+
+```yaml title=".stethoscoperc.yml"
+config:
+  spotify:
+    all: true
 ```
 
 ## Authentication

@@ -25,6 +25,14 @@ config:
     library: true
 ```
 
+If you want to enable all data points, you can simply use `all` instead:
+
+```yaml title=".stethoscoperc.yml"
+config:
+  pocket-casts:
+    all: true
+```
+
 ## Authentication
 
 :::warning

@@ -31,6 +31,14 @@ config:
 If you enable `top-activities`, it will track and commit a list of all your activities, including domains of websites you have visited and name of apps you have used.
 :::
 
+If you want to enable all data points, you can simply use `all` instead:
+
+```yaml title=".stethoscoperc.yml"
+config:
+  rescue-time:
+    all: true
+```
+
 ## Authentication
 
 You need to provide your Rescue Time API key, which is available on your [API key management](https://www.rescuetime.com/anapi/manage) page on the Rescue Time website.
