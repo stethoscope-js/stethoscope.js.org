@@ -45,6 +45,22 @@ daily:
   - googleFit
 ```
 
+### Add tracking details
+
+All data points are **opt-in**, so you have to individually enable which items to track for each Integration.
+
+For example, if you have enabled the [RescueTime](/docs/integrations/rescuetime) integration, you can track your overview, top categories, and top activities. In this example, we are enabling the overview and top categories, but not top activities in the `.stethoscoperc.yml` file. A sample file is available in the repository: [`.stethoscoperc.yml`](https://github.com/stethoscope-js/stethoscope/blob/master/.stethoscoperc.yml).
+
+```yaml
+config:
+  rescueTime:
+    overview: true
+    categories: true
+    activities: false
+```
+
+Detailed documentation about which tracking details are available for each service is present in [Integrations](/docs/integrations).
+
 ### Add repository secrets
 
 All sensitive information required, such as API keys, are provided as environment variables. These are stored as GitHub repository secrets (see [Creating and storing encrypted secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets)).
