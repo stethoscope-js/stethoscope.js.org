@@ -2,6 +2,16 @@
 title: Wakatime
 ---
 
-Wakatime is used for time tracking data.
+The Wakatime API is used to track your programming time and top languages. Add the key `wakatime` under `daily` to fetch this data every day.
 
-More documentation will be updated soon.
+## Authentication
+
+You need to provide your WakaTime API key, which is available on the [Settings](https://wakatime.com/settings/account) page on the WakaTime website. Under "API key", click on "[click to show]" to view the API key and copy it.
+
+## Environment variables
+
+| Environment variable | Description |
+| -------------------- | ----------- |
+| `WAKATIME_API_KEY`   | API key     |
+
+<a href="/docs/integrations/wakatime"><img class="logos" alt="Wakatime" src="https://stethoscope.js.org/branding/integrations/wakatime.png" /></a>
