@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+  repository_dispatch:
+    types: [build]
+  workflow_dispatch:
 jobs:
   release:
     name: Build and deploy site
