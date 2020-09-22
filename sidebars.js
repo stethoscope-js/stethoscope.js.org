@@ -17,6 +17,12 @@ module.exports = {
     Embed: ["embed/intro"],
     Action: ["action/intro"],
     Branding: ["branding/intro"],
-    Policies: ["policies/intro"],
+    Policies: [
+      "policies/intro",
+      "policies/code-of-conduct",
+      "policies/contributing",
+      "policies/security",
+      "policies/support",
+    ],
   },
 };
