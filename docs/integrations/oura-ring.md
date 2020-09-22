@@ -2,7 +2,32 @@
 title: Oura Ring
 ---
 
-The Oura API is used to track your daily sleep and activity. Add the key `ouraRing` under `daily` to fetch this data every day.
+The Oura API is used to track your daily sleep and activity. Add the key `ouraRing` under `daily` to fetch this data every day:
+
+```yaml title=".stethoscoperc.yml"
+daily:
+  - oura-ring
+```
+
+## Data points
+
+The following data points are available for this integration:
+
+| Data point  | Description                      |
+| ----------- | -------------------------------- |
+| `weight`    | Weight                           |
+| `sleep`     | Sleep time and quality           |
+| `readiness` | Readiness score                  |
+| `activity`  | Activity (steps, calories, etc.) |
+
+```yaml title=".stethoscoperc.yml"
+config:
+  oura-ring:
+    weight: true
+    sleep: true
+    readiness: true
+    activity: true
+```
 
 ## Authentication
 

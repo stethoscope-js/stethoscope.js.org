@@ -2,7 +2,28 @@
 title: Clockify
 ---
 
-The Clockify API is used to track your time sessions. Add the key `clockify` under `daily` to fetch this data every day.
+The Clockify API is used to track your time sessions. Add the key `clockify` under `daily` to fetch this data every day:
+
+```yaml title=".stethoscoperc.yml"
+daily:
+  - clockify
+```
+
+## Data points
+
+The following data points are available for this integration:
+
+| Data point | Description           |
+| ---------- | --------------------- |
+| `entries`  | Time tracking entries |
+
+```yaml title=".stethoscoperc.yml"
+config:
+  clockify:
+    entries: true
+```
+
+Sensitive information such as project ID, workspace ID, item ID, user ID, and entry description are automatically removed.
 
 ## Authentication
 

@@ -2,7 +2,32 @@
 title: Last.fm
 ---
 
-The Last.fm API is used to track your music listening history. It is recommended over Spotify because you can scrobble tracks from multiple services. Add the key `lastFm` under `daily` to fetch this data every day.
+The Last.fm API is used to track your music listening history. It is recommended over Spotify because you can scrobble tracks from multiple services. Add the key `lastFm` under `daily` to fetch this data every day:
+
+```yaml title=".stethoscoperc.yml"
+daily:
+  - last-fm
+```
+
+## Data points
+
+The following data points are available for this integration:
+
+| Data point    | Description       |
+| ------------- | ----------------- |
+| `history`     | Listening history |
+| `top-albums`  | Top albums        |
+| `top-tracks`  | Top tracks        |
+| `top-artists` | Top artists       |
+
+```yaml title=".stethoscoperc.yml"
+config:
+  last-fm:
+    history: true
+    top-albums: true
+    top-tracks: true
+    top-artists: true
+```
 
 ## Authentication
 

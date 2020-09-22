@@ -2,7 +2,34 @@
 title: RescueTime
 ---
 
-The Rescue Time API is used to track your screen time from all your devices. Add the key `rescueTime` under `daily` to fetch this data every day.
+The Rescue Time API is used to track your screen time from all your devices. Add the key `rescueTime` under `daily` to fetch this data every day:
+
+```yaml title=".stethoscoperc.yml"
+daily:
+  - rescuetime
+```
+
+## Data points
+
+The following data points are available for this integration:
+
+| Data point       | Description                           |
+| ---------------- | ------------------------------------- |
+| `top-categories` | Top categories                        |
+| `top-activities` | Top activities (websites, apps, etc.) |
+| `overview`       | Productivity overview                 |
+
+```yaml title=".stethoscoperc.yml"
+config:
+  rescuetime:
+    top-categories: true
+    top-activities: true
+    overview: true
+```
+
+:::note
+If you enable `top-activities`, it will track and commit a list of all your activities, including domains of websites you have visited and name of apps you have used.
+:::
 
 ## Authentication
 

@@ -2,7 +2,28 @@
 title: Pocket Casts
 ---
 
-The Pocket Casts API is used to track your podcast listening history and track library. Add the key `pocketCasts` under `daily` to fetch this data every day.
+The Pocket Casts API is used to track your podcast listening history and track library. Add the key `pocketCasts` under `daily` to fetch this data every day:
+
+```yaml title=".stethoscoperc.yml"
+daily:
+  - pocket-casts
+```
+
+## Data points
+
+The following data points are available for this integration:
+
+| Data point | Description       |
+| ---------- | ----------------- |
+| `history`  | Listening history |
+| `library`  | Podcast library   |
+
+```yaml title=".stethoscoperc.yml"
+config:
+  pocket-casts:
+    history: true
+    library: true
+```
 
 ## Authentication
 
