@@ -10,7 +10,9 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "embed-download": "git clone --single-branch --branch gh-pages https://github.com/stethoscope-js/embed && rm -rf embed/.git",
-    "embed-copy": "cp -r embed build/embed"
+    "embed-copy": "cp -r embed build/embed",
+    "branding-download": "git clone --single-branch --branch gh-pages https://github.com/stethoscope-js/branding && rm -rf branding/.git",
+    "branding-copy": "cp -r branding build/branding"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.64",
