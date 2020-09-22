@@ -18,7 +18,7 @@ The following data points are available for this integration:
 | `entries`  | Time tracking entries |
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   clockify:
     entries: true
 ```
@@ -26,7 +26,7 @@ config:
 If you want to enable all data points, you can simply use `all` instead:
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   clockify:
     all: true
 ```

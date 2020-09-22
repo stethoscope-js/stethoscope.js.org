@@ -21,7 +21,7 @@ The following data points are available for this integration:
 | `activity`  | Activity (steps, calories, etc.) |
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   oura-ring:
     weight: true
     sleep: true
@@ -32,7 +32,7 @@ config:
 If you want to enable all data points, you can simply use `all` instead:
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   oura-ring:
     all: true
 ```

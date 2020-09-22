@@ -19,7 +19,7 @@ The following data points are available for this integration:
 | `library`  | Podcast library   |
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   pocket-casts:
     history: true
     library: true
@@ -28,7 +28,7 @@ config:
 If you want to enable all data points, you can simply use `all` instead:
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   pocket-casts:
     all: true
 ```

@@ -20,7 +20,7 @@ The following data points are available for this integration:
 | `overview`       | Productivity overview                 |
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   rescuetime:
     top-categories: true
     top-activities: true
@@ -34,7 +34,7 @@ If you enable `top-activities`, it will track and commit a list of all your acti
 If you want to enable all data points, you can simply use `all` instead:
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   rescue-time:
     all: true
 ```

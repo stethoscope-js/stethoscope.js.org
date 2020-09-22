@@ -18,7 +18,7 @@ The following data points are available for this integration:
 | `summary`  | Summary of languages and duration |
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   wakatime:
     summary: true
 ```
@@ -26,7 +26,7 @@ config:
 If you want to enable all data points, you can simply use `all` instead:
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   wakatime:
     all: true
 ```

@@ -21,7 +21,7 @@ The following data points are available for this integration:
 | `top-artists` | Top artists       |
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   last-fm:
     history: true
     top-albums: true
@@ -32,7 +32,7 @@ config:
 If you want to enable all data points, you can simply use `all` instead:
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   last-fm:
     all: true
 ```

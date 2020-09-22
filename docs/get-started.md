@@ -69,7 +69,7 @@ All data points are **opt-in**, so you have to individually enable which items t
 For example, if you have enabled the [RescueTime](/docs/integrations/rescuetime) integration, you can track your overview, top categories, and top activities. In this example, we are enabling the overview and top categories, but not top activities in the `.stethoscoperc.yml` file. A sample file is available in the repository: [`.stethoscoperc.yml`](https://github.com/stethoscope-js/stethoscope/blob/master/.stethoscoperc.yml).
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   rescueTime:
     overview: true
     categories: true

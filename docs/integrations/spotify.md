@@ -23,7 +23,7 @@ The following data points are available for this integration:
 | `top-artists` | Top artists       |
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   spotify:
     history: true
     library: true
@@ -34,7 +34,7 @@ config:
 If you want to enable all data points, you can simply use `all` instead:
 
 ```yaml title=".stethoscoperc.yml"
-config:
+integrations:
   spotify:
     all: true
 ```
