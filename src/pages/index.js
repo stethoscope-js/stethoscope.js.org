@@ -8,32 +8,35 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    title: "Easy to Use",
+    title: "All your life data",
     imageUrl: "img/DancingDoodle.svg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Connect your lifestyle services, from music (Spotify, Last.fm) and
+        podcasts (Pocket Casts), to reading (Goodreads) and time tracking
+        (RescueTime, Wakatime, Clockify).
       </>
     ),
   },
   {
-    title: "Easy to Use",
+    title: "All your health data",
     imageUrl: "img/RollerSkatingDoodle.svg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Connect your Apple Watch or Android/iOS smartphone's health tracking
+        using Google Fit, or connect your Oura Ring to accurately track your
+        health data.
       </>
     ),
   },
   {
-    title: "Easy to Use",
+    title: "Always up to date",
     imageUrl: "img/UnboxingDoodle.svg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Using GitHub Actions and open source code, always keep your data up to
+        datEa (updates every day or hour) and access it using simple-to-use
+        RESTful APIs.
       </>
     ),
   },
