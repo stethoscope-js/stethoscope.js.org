@@ -28,3 +28,7 @@ slug: /integrations
 <a href="/docs/integrations/oura-ring"><img class="logos" alt="Oura-Ring" src="https://stethoscope.js.org/branding/integrations/oura-ring.png" /></a>
 
 <a href="/docs/integrations/apple-health"><img class="logos" alt="Apple Health" src="https://stethoscope.js.org/branding/integrations/apple-health.png" /></a>
+
+## Ideas
+
+If you have an idea for a new integration, share it with us here: [stethoscope-js/stethoscope#1](https://github.com/stethoscope-js/stethoscope/issues/1).
