@@ -55,8 +55,7 @@ The `.stethoscoperc.yml` file is used as the central configuration store. In tha
 Enter the camel-cased names of all services you intend to use, for example:
 
 ```yaml title=".stethoscoperc.yml"
-daily:
-  - rescueTime
+integrations: rescueTime
   - lastFm
   - pocketCasts
   - googleFit

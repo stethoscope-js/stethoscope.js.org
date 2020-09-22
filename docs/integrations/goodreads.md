@@ -6,7 +6,9 @@ title: Goodreads
 This integration is currently in development.
 :::
 
-The GoodReads API is used to track your reading history and list of books on your shelves. Add the key `goodreads` under `daily` to fetch this data every day.
+## Intro
+
+The GoodReads API is used to track your reading history and list of books on your shelves. Add the key `goodreads` under `integrations` to fetch this data every day.
 
 ## Environment variables
 

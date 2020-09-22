@@ -2,12 +2,9 @@
 title: Wakatime
 ---
 
-The Wakatime API is used to track your programming time and top languages. Add the key `wakatime` under `daily` to fetch this data every day:
+## Intro
 
-```yaml title=".stethoscoperc.yml"
-daily:
-  - wakatime
-```
+The Wakatime API is used to track your programming time and top languages.
 
 ## Data points
 

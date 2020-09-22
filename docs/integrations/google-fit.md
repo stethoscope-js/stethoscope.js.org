@@ -2,12 +2,9 @@
 title: Google Fit
 ---
 
-The Google Fit API is used to track your health and activity information. Add the key `google-fit` under `daily` to fetch this data every day:
+## Intro
 
-```yaml title=".stethoscoperc.yml"
-daily:
-  - google-fit
-```
+The Google Fit API is used to track your health and activity information.
 
 ## Data points
 

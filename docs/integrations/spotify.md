@@ -4,12 +4,7 @@ title: Spotify
 
 ## Intro
 
-The Spotify API is used to track your music listening history and track library. Add the key `spotify` under `daily` to fetch this data every day:
-
-```yaml title=".stethoscoperc.yml"
-daily:
-  - spotify
-```
+The Spotify API is used to track your music listening history and track library.
 
 ## Data points
 

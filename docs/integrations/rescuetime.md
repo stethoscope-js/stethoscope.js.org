@@ -2,12 +2,9 @@
 title: RescueTime
 ---
 
-The Rescue Time API is used to track your screen time from all your devices. Add the key `rescueTime` under `daily` to fetch this data every day:
+## Intro
 
-```yaml title=".stethoscoperc.yml"
-daily:
-  - rescuetime
-```
+The RescueTime API is used to track your screen time from all your devices.
 
 ## Data points
 
