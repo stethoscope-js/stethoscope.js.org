@@ -4,7 +4,7 @@ module.exports = {
   url: "https://stethoscope.js.org",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  favicon: "https://stethoscope-js.github.io/branding/stethoscope-icon.svg",
+  favicon: "https://stethoscope.js.org/branding/stethoscope-icon.svg",
   organizationName: "stethoscope-js",
   projectName: "stethoscope.js.org",
   themeConfig: {
@@ -12,7 +12,7 @@ module.exports = {
       title: "Stethoscope",
       logo: {
         alt: "Stethoscope Logo",
-        src: "https://stethoscope-js.github.io/branding/stethoscope-icon.svg",
+        src: "https://stethoscope.js.org/branding/stethoscope-icon.svg",
       },
       items: [
         {
@@ -23,7 +23,7 @@ module.exports = {
         },
         { to: "blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/stethoscope-js/stethoscope.js.org",
+          href: "https://github.com/stethoscope-js/stethoscope",
           label: "GitHub",
           position: "right",
         },
