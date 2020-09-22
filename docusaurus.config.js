@@ -36,12 +36,8 @@ module.exports = {
           title: "Stethoscope",
           items: [
             {
-              label: "Documentation",
-              to: "docs/",
-            },
-            {
               label: "Get started",
-              to: "docs/get-started",
+              to: "docs/",
             },
             {
               label: "Integrations",
@@ -50,6 +46,10 @@ module.exports = {
             {
               label: "Embed",
               to: "docs/embed/",
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/stethoscope-js",
             },
           ],
         },
@@ -78,8 +78,8 @@ module.exports = {
           title: "Time tracking integrations",
           items: [
             {
-              label: "Rescue Time",
-              to: "docs/integrations/rescue-time",
+              label: "RescueTime",
+              to: "docs/integrations/rescuetime",
             },
             {
               label: "Wakatime",
