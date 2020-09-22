@@ -72,6 +72,10 @@ module.exports = {
               label: "Goodreads",
               to: "docs/integrations/goodreads",
             },
+            {
+              label: "Twitter",
+              to: "docs/integrations/twitter",
+            },
           ],
         },
         {

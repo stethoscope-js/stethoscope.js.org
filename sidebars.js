@@ -16,6 +16,7 @@ module.exports = {
       "integrations/wakatime",
       "integrations/pocket-casts",
       "integrations/goodreads",
+      "integrations/twitter",
       "integrations/clockify",
       "integrations/google-fit",
       "integrations/oura-ring",
