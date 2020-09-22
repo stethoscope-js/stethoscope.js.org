@@ -12,6 +12,16 @@ The commits with your data also summarize it for easy consumption through an API
 
 After you have enabled publishing to GitHub Pages, your repository will be available at https://username.github.io/repo/ where `username` is your GitHub username and `repo` is the name of your repository. This is your base URL.
 
+### Custom domain
+
+You can also enable custom domains on your GitHub repository. To enable publishing with a custom domain:
+
+1. Create a new `CNAME` file in your repository root
+2. Enter your domain name in the file and commit it
+3. Set GitHub Pages' DNS records for your domain
+
+For more information, including a list of DNS records, read the following article on the GitHub website: [Configuring a custom domain for your GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
+
 ## API
 
 Each integration has its own API. For example, time tracking from RescueTime is available at https://username.github.io/repo/data/rescuetime-time-tracking/api.json. As an example, the template repository's RescueTime data is available at https://stethoscope-js.github.io/stethoscope/data/rescuetime-time-tracking/api.json.
@@ -98,3 +108,12 @@ Likewise, its `years.json` endpoint is https://stethoscope-js.github.io/stethosc
   "2020": 2864267.981469
 }
 ```
+
+## Rate limits
+
+Since we're using GitHub Pages to publish your API, you have to respect their usage limits. In most cases, you will not have a problem, but it's good to know ([source](https://docs.github.com/en/github/working-with-github-pages/about-github-pages#usage-limits)):
+
+- **There are no rate limits** on using these JSON endpoints
+- Published site may be no larger than 1 GB in size
+- Soft bandwidth limit of 100 GB per month
+- Soft limit of 10 builds per hour
