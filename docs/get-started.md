@@ -31,6 +31,8 @@ To access your [API endpoints](./api), you have to enable publishing using GitHu
 
 After saving, you will see confirmation text "Your site is ready to be published at...". For more information on enabling GitHub Pages, see the article on the GitHub website: [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
+If you don't want to have a publicly-available API, you don't have to enable publishing. If that is the case, you should also choose to keep your repository private (see [Setting repository visibility](https://docs.github.com/en/github/administering-a-repository/setting-repository-visibility)).
+
 ### Deleting sample data
 
 There is sample data available in the `data` directory. You have to start by **deleting the `data` directory** in your new repository. To delete the directory, perform the following steps ([source](https://github.community/t/how-to-delete-multiples-files-in-github/702/3)):
