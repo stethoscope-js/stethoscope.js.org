@@ -9,7 +9,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "embed-download": "git clone --single-branch --branch gh-pages https://github.com/stethoscope-js/embed",
+    "embed-download": "git clone --single-branch --branch gh-pages https://github.com/stethoscope-js/embed && rm -rf embed/.git",
     "embed-copy": "cp -r embed build/embed"
   },
   "dependencies": {
