@@ -5,10 +5,12 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "docusaurus build && npm run embed-download && npm run embed-copy",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve"
+    "serve": "docusaurus serve",
+    "embed-download": "git clone --single-branch --branch gh-pages https://github.com/stethoscope-js/embed",
+    "embed-copy": "cp -r embed build/embed"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.64",
