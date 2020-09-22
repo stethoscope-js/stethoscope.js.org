@@ -1,6 +1,6 @@
 module.exports = {
   title: "Stethoscope",
-  tagline: "Track and visualize your health and life data",
+  tagline: "Track, visualize, and embed your health and life data",
   url: "https://stethoscope.js.org",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -31,52 +31,84 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      // links: [
-      //   {
-      //     title: "Docs",
-      //     items: [
-      //       {
-      //         label: "Style Guide",
-      //         to: "docs/",
-      //       },
-      //       {
-      //         label: "Second Doc",
-      //         to: "docs/doc2/",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: "Community",
-      //     items: [
-      //       {
-      //         label: "Stack Overflow",
-      //         href: "https://stackoverflow.com/questions/tagged/docusaurus",
-      //       },
-      //       {
-      //         label: "Discord",
-      //         href: "https://discordapp.com/invite/docusaurus",
-      //       },
-      //       {
-      //         label: "Twitter",
-      //         href: "https://twitter.com/docusaurus",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: "More",
-      //     items: [
-      //       {
-      //         label: "Blog",
-      //         to: "blog",
-      //       },
-      //       {
-      //         label: "GitHub",
-      //         href: "https://github.com/stethoscope-js/stethoscope.js.org",
-      //       },
-      //     ],
-      //   },
-      // ],
-      copyright: `© ${new Date().getFullYear()} Stethoscope`,
+      links: [
+        {
+          title: "Stethoscope",
+          items: [
+            {
+              label: "Documentation",
+              to: "docs/",
+            },
+            {
+              label: "Get started",
+              to: "docs/get-started",
+            },
+            {
+              label: "Integrations",
+              to: "docs/integrations/",
+            },
+            {
+              label: "Embed",
+              to: "docs/embed/",
+            },
+          ],
+        },
+        {
+          title: "Lifestyle integrations",
+          items: [
+            {
+              label: "Spotify",
+              to: "docs/integrations/spotify",
+            },
+            {
+              label: "Last.fm",
+              to: "docs/integrations/last-fm",
+            },
+            {
+              label: "Pocket Casts",
+              to: "docs/integrations/pocket-casts",
+            },
+            {
+              label: "Goodreads",
+              to: "docs/integrations/goodreads",
+            },
+          ],
+        },
+        {
+          title: "Time tracking integrations",
+          items: [
+            {
+              label: "Rescue Time",
+              to: "docs/integrations/rescue-time",
+            },
+            {
+              label: "Wakatime",
+              to: "docs/integrations/wakatime",
+            },
+            {
+              label: "Clockify",
+              to: "docs/integrations/clockify",
+            },
+          ],
+        },
+        {
+          title: "Health integrations",
+          items: [
+            {
+              label: "Google Fit",
+              to: "docs/integrations/google-fit",
+            },
+            {
+              label: "Oura Ring",
+              to: "docs/integrations/oura-ring",
+            },
+            {
+              label: "Apple Health",
+              to: "docs/integrations/apple-health",
+            },
+          ],
+        },
+      ],
     },
   },
   presets: [
