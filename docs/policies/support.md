@@ -28,7 +28,7 @@ Spending the extra time up front can help save everyone time in the long run.
 
 ## Contributions
 
-See our Contributing Guideline, available at https://github.com/koj-co/.github/.
+See our Contributing Guideline, available at https://github.com/stethoscope-js/.github/.
 
 ## Credits
 

@@ -38,7 +38,7 @@ Tells me the problem that you have found, and the pull request shows me the acti
 
 ### Does it follow the Code of Conduct
 
-Make sure that you follow the Code of Conduct, available at https://github.com/koj-co/.github.
+Make sure that you follow the Code of Conduct, available at https://github.com/stethoscope-js/.github.
 
 ## Credits
 
