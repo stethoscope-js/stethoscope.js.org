@@ -61,7 +61,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout description="Track and visualize your health and life data">
+    <Layout>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <img
@@ -76,7 +76,7 @@ function Home() {
               className={clsx("button button--lg", styles.getStarted)}
               to={useBaseUrl("docs/")}
             >
-              Get Started
+              Read Stethoscope docs &rarr;
             </Link>
           </div>
         </div>
