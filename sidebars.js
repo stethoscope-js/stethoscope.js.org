@@ -1,6 +1,13 @@
 module.exports = {
   someSidebar: {
-    "Getting started": ["get-started"],
+    "Getting started": [
+      "get-started",
+      "configuration",
+      "manual-triggers",
+      "migrating-old-data",
+      "understanding-data",
+      "api",
+    ],
     Integrations: [
       "integrations/intro",
       "integrations/spotify",

@@ -1,5 +1,5 @@
 ---
-title: Setup
+title: Repository
 slug: /
 ---
 
@@ -19,6 +19,17 @@ For more details on how to create repositories using template, read the article 
 ## After creating your repository
 
 The following steps apply to your new repository, not the [stethoscope-js/stethoscope](https://github.com/stethoscope-js/stethoscope) template repository.
+
+### Enable publishing
+
+To access your [API endpoints](./api), you have to enable publishing using GitHub Pages:
+
+1. Go to your repository settings page
+2. Scroll to "GitHub Pages" settings
+3. Under "Source", change "None" to "master"
+4. Click on "Save"
+
+After saving, you will see confirmation text "Your site is ready to be published at...". For more information on enabling GitHub Pages, see the article on the GitHub website: [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ### Deleting sample data
 
