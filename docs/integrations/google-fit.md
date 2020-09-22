@@ -1,5 +1,4 @@
 ---
-id: google-fit
 title: Google Fit
 ---
 
