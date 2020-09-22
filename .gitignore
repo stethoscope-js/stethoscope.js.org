@@ -3,7 +3,8 @@
 
 # Production
 /build
-embed/
+build/embed/
+build/branding/
 
 # Generated files
 .docusaurus
