@@ -52,16 +52,21 @@ There is sample data available in the `data` directory. You have to start by **d
 
 The `.stethoscoperc.yml` file is used as the central configuration store. In that file, you can specify which services you want to connect to using [Integrations](/docs/integrations).
 
-Enter the camel-cased names of all services you intend to use, for example:
+Enter the name (slugified) of each services you intend to use. In the following example, we have enabled all tracking data points for four integrations:
 
 ```yaml title=".stethoscoperc.yml"
-integrations: rescueTime
-  - lastFm
-  - pocketCasts
-  - googleFit
+integrations:
+  rescueTime:
+    all: true
+  lastFm:
+    all: true
+  pocketCasts:
+    all: true
+  googleFit:
+    all: true
 ```
 
-### Add tracking details
+### Add tracking data points
 
 All data points are **opt-in**, so you have to individually enable which items to track for each Integration.
 
@@ -75,7 +80,7 @@ integrations:
     activities: false
 ```
 
-Detailed documentation about which tracking details are available for each service is present in [Integrations](/docs/integrations).
+Detailed documentation about which data points are available for each service is present in [Integrations](/docs/integrations).
 
 ### Add repository secrets
 
