@@ -1,33 +1,34 @@
-# Website
+# 🩺📝 [Stethoscope.js.org](https://stethoscope.js.org)
 
-This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+[![Stethoscope](https://stethoscope.js.org/branding/badge-small.svg)](https://stethoscope.js.org)
+[![Node CI](https://github.com/stethoscope-js/stethoscope.js.org/workflows/Node%20CI/badge.svg)](https://github.com/stethoscope-js/stethoscope.js.org/actions?query=workflow%3A%22Node+CI%22)
 
-### Installation
+This repository contains the documentation and source code for the Stethoscope website, built using [Docusaurus 2](https://v2.docusaurus.io).
 
-```
-$ yarn
-```
+[**To get started, visit stethoscope-js/stethoscope →**](https://github.com/stethoscope-js/stethoscope)
 
-### Local Development
+## 🎁 Contributing
 
-```
-$ yarn start
-```
+This repository is for Stethoscope's GitHub Actions package. We love contributions, so please read our [Contributing Guidelines](https://github.com/stethoscope-js/.github/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/stethoscope-js/.github/blob/master/CODE_OF_CONDUCT.md) and open an issue or make a pull request!
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+### Issues
 
-### Build
+We use the [stethoscope-js/stethoscope](https://github.com/stethoscope-js/stethoscope) repository for issues for all projects, including this one. If you found a bug or have a feature request, [open an issue](https://github.com/stethoscope-js/stethoscope/issues) in the Stethoscope repository and add the label "embed".
 
-```
-$ yarn build
-```
+## 💻 Development
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
+To start a local development server:
 
 ```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+npm run start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Build the production bundle:
+
+```
+npm run build
+```
+
+## 📄 License
+
+Code: [MIT](./LICENSE) © [Anand Chowdhary](https://anandchowdhary.com)
