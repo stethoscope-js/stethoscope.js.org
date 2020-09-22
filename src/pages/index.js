@@ -7,16 +7,36 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 const features = [
-  // {
-  //   title: "Easy to Use",
-  //   imageUrl: "img/undraw_docusaurus_mountain.svg",
-  //   description: (
-  //     <>
-  //       Docusaurus was designed from the ground up to be easily installed and
-  //       used to get your website up and running quickly.
-  //     </>
-  //   ),
-  // },
+  {
+    title: "Easy to Use",
+    imageUrl: "img/DancingDoodle.svg",
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
+  {
+    title: "Easy to Use",
+    imageUrl: "img/RollerSkatingDoodle.svg",
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
+  {
+    title: "Easy to Use",
+    imageUrl: "img/UnboxingDoodle.svg",
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
 ];
 
 function Feature({ imageUrl, title, description }) {
@@ -45,10 +65,7 @@ function Home() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={clsx(
-                "button button--outline button--secondary button--lg",
-                styles.getStarted
-              )}
+              className={clsx("button button--lg", styles.getStarted)}
               to={useBaseUrl("docs/")}
             >
               Get Started

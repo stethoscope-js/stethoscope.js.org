@@ -17,6 +17,7 @@
   --ifm-code-font-size: 95%;
 
   --ifm-heading-color: #000;
+  --ifm-button-border-color: #000;
   --ifm-font-color-base-inverse: #000;
   --ifm-link-color: var(--ifm-color-primary-dark);
   --ifm-menu-color-active: var(--ifm-color-primary-dark);
