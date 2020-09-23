@@ -52,17 +52,21 @@ There is sample data available in the `data` directory. You have to start by **d
 
 The `.stethoscoperc.yml` file is used as the central configuration store. In that file, you can specify which services you want to connect to using [Integrations](/docs/integrations).
 
-Enter the name (slugified) of each services you intend to use. In the following example, we have enabled all tracking data points for four integrations:
+Enter the name (slugified) of each services you intend to use. In the following example, we have enabled all tracking data points for four integrations, all fetching the data every day:
 
 ```yaml title=".stethoscoperc.yml"
 integrations:
-  rescueTime:
+  rescue-time:
+    frequency: "daily"
     all: true
-  lastFm:
+  last-fm:
+    frequency: "daily"
     all: true
-  pocketCasts:
+  pocket-casts:
+    frequency: "daily"
     all: true
-  googleFit:
+  google-fit:
+    frequency: "daily"
     all: true
 ```
 
@@ -74,7 +78,7 @@ For example, if you have enabled the [RescueTime](/docs/integrations/rescuetime)
 
 ```yaml title=".stethoscoperc.yml"
 integrations:
-  rescueTime:
+  rescue-time:
     overview: true
     categories: true
     activities: false
