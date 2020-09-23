@@ -18,6 +18,7 @@ The following data points are available for this integration:
 ```yaml title=".stethoscoperc.yml"
 integrations:
   pocket-casts:
+    frequency: "daily"
     history: true
     library: true
 ```
@@ -27,6 +28,7 @@ If you want to enable all data points, you can simply use `all` instead:
 ```yaml title=".stethoscoperc.yml"
 integrations:
   pocket-casts:
+    frequency: "daily"
     all: true
 ```
 

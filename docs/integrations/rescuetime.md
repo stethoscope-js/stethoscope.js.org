@@ -19,6 +19,7 @@ The following data points are available for this integration:
 ```yaml title=".stethoscoperc.yml"
 integrations:
   rescuetime:
+    frequency: "daily"
     top-categories: true
     top-activities: true
     overview: true
@@ -33,6 +34,7 @@ If you want to enable all data points, you can simply use `all` instead:
 ```yaml title=".stethoscoperc.yml"
 integrations:
   rescue-time:
+    frequency: "daily"
     all: true
 ```
 

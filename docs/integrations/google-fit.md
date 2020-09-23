@@ -273,6 +273,7 @@ If you want to enable all data points, you can simply use `all` instead:
 ```yaml title=".stethoscoperc.yml"
 integrations:
   google-fit:
+    frequency: "daily"
     all: true
 ```
 

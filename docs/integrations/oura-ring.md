@@ -20,6 +20,7 @@ The following data points are available for this integration:
 ```yaml title=".stethoscoperc.yml"
 integrations:
   oura-ring:
+    frequency: "daily"
     weight: true
     sleep: true
     readiness: true
@@ -31,6 +32,7 @@ If you want to enable all data points, you can simply use `all` instead:
 ```yaml title=".stethoscoperc.yml"
 integrations:
   oura-ring:
+    frequency: "daily"
     all: true
 ```
 
