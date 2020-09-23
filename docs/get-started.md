@@ -56,7 +56,7 @@ Enter the name (slugified) of each services you intend to use. In the following 
 
 ```yaml title=".stethoscoperc.yml"
 integrations:
-  rescue-time:
+  rescuetime:
     frequency: "daily"
     all: true
   last-fm:
@@ -78,7 +78,7 @@ For example, if you have enabled the [RescueTime](/docs/integrations/rescuetime)
 
 ```yaml title=".stethoscoperc.yml"
 integrations:
-  rescue-time:
+  rescuetime:
     overview: true
     categories: true
     activities: false

@@ -33,7 +33,7 @@ If you want to enable all data points, you can simply use `all` instead:
 
 ```yaml title=".stethoscoperc.yml"
 integrations:
-  rescue-time:
+  rescuetime:
     frequency: "daily"
     all: true
 ```
