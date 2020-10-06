@@ -20,13 +20,13 @@ RESCUETIME_API_KEY = "example-api-key"
 Then, we will run the Stethoscope Integrations CLI using [npx](https://github.com/npm/npx). Select which integration's data you want to migrate. For example, to migrate your RescueTime data from January 26, 2020:
 
 ```bash
-npx @stethoscope/integrations migrate rescuetime 2020-01-26
+npx @stethoscope-js/integrations migrate rescuetime 2020-01-26
 ```
 
 In the above shell command, the parts are:
 
 1. `npx` is the package runner for Node.js
-2. `@stethoscope/integrations` is the Stethoscope Integrations and CLI package
+2. `@stethoscope-js/integrations` is the Stethoscope Integrations and CLI package
 3. `migrate` is the CLI command used for performing data migrations
 4. `rescuetime` is the name of the service
 5. `2020-01-26` is the date to start from in the YYYY-MM-DD format
