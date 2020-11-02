@@ -5,12 +5,13 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build && npm run embed-download && npm run embed-copy && npm run branding-download && npm run branding-copy && npm run status-download",
+    "build": "docusaurus build && npm run embed-download && npm run embed-copy && npm run branding-download && npm run branding-copy && npm run status-download && npm run status-copy",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "embed-download": "git clone --single-branch --branch gh-pages https://github.com/stethoscope-js/embed && rm -rf embed/.git",
     "status-download": "git clone --single-branch --branch gh-pages https://github.com/stethoscope-js/status && rm -rf status/.git",
+    "status-copy": "cp -r status build/status",
     "embed-copy": "cp -r embed build/embed",
     "branding-download": "git clone https://github.com/stethoscope-js/branding && rm -rf branding/.git",
     "branding-copy": "cp -r branding build"
