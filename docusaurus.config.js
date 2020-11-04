@@ -8,6 +8,10 @@ module.exports = {
   organizationName: "stethoscope-js",
   projectName: "stethoscope.js.org",
   themeConfig: {
+    algolia: {
+      apiKey: "d1ee4a5651bfded1c23f37d0d64552b8",
+      indexName: "stethoscope",
+    },
     navbar: {
       title: "Stethoscope",
       logo: {
