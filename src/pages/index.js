@@ -48,7 +48,7 @@ function Feature({ imageUrl, title, description }) {
     <div className={clsx("col col--4", styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <img className={clsx("dark-invertable ", styles.featureImage)} src={imgUrl} alt={title} />
         </div>
       )}
       <h3>{title}</h3>

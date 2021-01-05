@@ -33,6 +33,10 @@
   --ifm-color-primary: var(--ifm-color-primary-darkest);
 }
 
+[data-theme=dark] .dark-invertable {
+  filter: invert() brightness(80%);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
