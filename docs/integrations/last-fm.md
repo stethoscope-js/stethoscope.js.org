@@ -42,9 +42,10 @@ You'll have to create an API account on https://www.last.fm/api/account/create. 
 
 ## Environment variables
 
-| Environment variable   | Description   |
-| ---------------------- | ------------- |
-| `LASTFM_API_KEY`       | API key       |
-| `LASTFM_SHARED_SECRET` | Shared secret |
+| Environment variable   | Description           |
+| ---------------------- | --------------------- |
+| `LASTFM_API_KEY`       | API key               |
+| `LASTFM_SHARED_SECRET` | Shared secret         |
+| `LASTFM_USERNAME`      | Your Last.fm username |
 
 <a href="/docs/integrations/last-fm"><img class="logos" alt="Last.fm" src="https://stethoscope.js.org/branding/integrations/last-fm.png" /></a>
