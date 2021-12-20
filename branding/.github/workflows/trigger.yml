@@ -1,0 +1,17 @@
+name: Trigger CI
+on:
+  push:
+    branches:
+      - master
+jobs:
+  release:
+    name: Trigger site build
+    runs-on: ubuntu-18.04
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Repository dispatch
+        uses: peter-evans/repository-dispatch@v1.1.2
+        with:
+          token: ${{ secrets.GH_PAT }}
+          repository: stethoscope-js/stethoscope.js.org
+          event-type: build
