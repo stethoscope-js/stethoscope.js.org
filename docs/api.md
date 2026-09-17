@@ -3,12 +3,12 @@ title: API endpoints
 ---
 
 :::note
-Having publicly-visible API endpoints is optional. API endpoints only work after you have enabled GitHub Pages and have a public repository or a private repository with a Pro plan.
+Publishing data endpoints is optional. Enabling GitHub Pages makes the generated site public, so publish only a repository whose tracked data you intend to share. For private tracking, leave Pages disabled and keep the repository private.
 :::
 
 ## Base URL
 
-The commits with your data also summarize it for easy consumption through an API. The `data` directory contains a list of integrations, and each of them has a `api.json` file.
+The commits with your data can also include summaries for easy consumption through static JSON endpoints. Data is stored below `data/`. A category has an `api.json` index only when Stethoscope generated summaries for that category; raw-only and daily-only categories can legitimately have no `api.json`.
 
 After you have enabled publishing to GitHub Pages, your repository will be available at https://username.github.io/repo/ where `username` is your GitHub username and `repo` is the name of your repository. This is your base URL.
 
@@ -108,6 +108,34 @@ Likewise, its `years.json` endpoint is https://stethoscope-js.github.io/stethosc
   "2020": 2864267.981469
 }
 ```
+
+## Latest-run manifest
+
+The current Stethoscope action also writes an additive v3 run manifest at:
+
+```
+data/.stethoscope/manifest.v3.json
+```
+
+When GitHub Pages is enabled, its public URL is:
+
+```
+https://username.github.io/repo/data/.stethoscope/manifest.v3.json
+```
+
+This file describes the latest action run. It contains:
+
+- `format`, currently `3`
+- `generatedAt`, the run timestamp
+- `generator`, with the action version, integrations version, and source commit
+- `adapters`, with a `succeeded`, `skipped`, or `failed` outcome for every adapter
+- `v2Files`, a map of v2 files changed by that run to their SHA-256 hashes
+
+The manifest is an audit aid, not a replacement for existing v2 data URLs. It does not contain provider error messages, credentials, response bodies, or account identifiers, and it is overwritten by the next run rather than kept as a historical log.
+
+:::note
+The manifest lives in a dot-prefixed directory. Repositories created from the current template include an empty `.nojekyll` file so GitHub Pages publishes that path. Existing repositories should add the same empty file at the repository root if the manifest URL returns `404` while non-dot `data/` URLs work.
+:::
 
 ## Rate limits
 
