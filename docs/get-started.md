@@ -17,7 +17,9 @@ You can click on the following link to generate a repository using the template:
 For more details on how to create repositories using template, read the article on the GitHub website: [Creating a repository from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 
 :::note
-Your data will be committed to this repository, so if you don't want it to be visible to everyone, you should set your repository as **private** (see [Setting repository visibility](https://docs.github.com/en/github/administering-a-repository/setting-repository-visibility)). Note that all data points are **opt-in**, so we recommend a public repository with the data you want to share, and a private one with more in-depth tracking.
+Stethoscope commits the data points you enable to this repository. Treat choosing a public repository and enabling GitHub Pages as explicit consent to publish that data. All data points are **opt-in**, so enable only what you intend to collect and share.
+
+For private tracking, use a **private** repository and leave GitHub Pages disabled. For public sharing, use a separate repository containing only the data points you are comfortable publishing. See [Setting repository visibility](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility).
 :::
 
 ## After creating your repository
@@ -26,7 +28,7 @@ The following steps apply to your new repository, not the [stethoscope-js/stetho
 
 ### Enable publishing
 
-To access your [API endpoints](./api), you have to enable publishing using GitHub Pages:
+To access your [public data endpoints](./api), enable publishing using GitHub Pages. This publishes the repository's generated data, not just a dashboard, so review the enabled integrations and existing `data/` files first.
 
 1. Go to your repository settings page
 2. Scroll to "GitHub Pages" settings
@@ -35,7 +37,7 @@ To access your [API endpoints](./api), you have to enable publishing using GitHu
 
 After saving, you will see confirmation text "Your site is ready to be published at...". For more information on enabling GitHub Pages, see the article on the GitHub website: [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
-If you don't want to have a publicly-available API, you don't have to enable publishing. If that is the case, you should also choose to keep your repository private.
+If you do not want a public data site, do not enable GitHub Pages and keep the repository private.
 
 ### Deleting sample data
 
