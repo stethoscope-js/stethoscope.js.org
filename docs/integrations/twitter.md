@@ -1,53 +1,11 @@
 ---
-title: Twitter
+title: Twitter/X (legacy, unverified)
 ---
 
-## Intro
+:::warning Legacy integration — current API access unverified
+The current adapter still calls the v1.1 `statuses/user_timeline` and `favorites/list` endpoints using `twitter-lite`. We have not verified its current access requirements or a safe credential-free smoke path. Do not rely on this adapter for a new setup without independently checking your developer access and the provider's terms.
+:::
 
-You can track all your tweets (including retweets) and likes using the Twitter integration.
+Historically this adapter wrote tweets to `data/twitter-tweets/` and likes to `data/twitter-likes/`. Existing files remain readable and this documentation change does not alter the adapter or disable older configurations. If configured, check the latest [run manifest](/docs/understanding-data) rather than treating a green scheduled workflow as evidence that the calls worked.
 
-## Data points
-
-The following data points are available for this integration:
-
-| Data point | Description  |
-| ---------- | ------------ |
-| `tweets`   | Tweets       |
-| `likes`    | Liked tweets |
-
-```yaml title=".stethoscoperc.yml"
-integrations:
-  spotify:
-    frequency: "daily"
-    tweets: true
-    likes: true
-```
-
-If you want to enable all data points, you can simply use `all` instead:
-
-```yaml title=".stethoscoperc.yml"
-integrations:
-  spotify:
-    frequency: "daily"
-    all: true
-```
-
-## Authorization
-
-First, create a new Twitter application on https://developer.twitter.com/en/apps/create. Then, copy its API key and API secret key.
-
-After that, head to the "Keys and tokens" tab and under "Access token & access token secret", click on "Generate". Copy the Access Token and Access Token Secret.
-
-## Environment variables
-
-When the tokens are generated, you can set the following environment variables:
-
-| Environment variable          | Description         |
-| ----------------------------- | ------------------- |
-| `TWITTER_API_KEY`             | API key             |
-| `TWITTER_API_SECRET_KEY`      | API secret key      |
-| `TWITTER_ACCESS_TOKEN`        | Access token        |
-| `TWITTER_ACCESS_TOKEN_SECRET` | Access token secret |
-| `TWITTER_SCREEN_NAME`         | Twitter username    |
-
-<a href="/docs/integrations/twitter"><img class="logos" alt="Twitter" src="https://stethoscope.js.org/branding/integrations/twitter.png" /></a>
+The original OAuth 1.0a credential names and configuration are available in the [historical documentation in Git](https://github.com/stethoscope-js/stethoscope.js.org/blob/0b06584c4f2c1a0cd1acdd347678c8f099de67f2/docs/integrations/twitter.md); that page's examples mistakenly used `spotify` as the integration slug. The [adapter source](https://github.com/stethoscope-js/integrations/blob/master/src/api/twitter.ts) is the reference for interpreting older data, not a verified new onboarding guide.
