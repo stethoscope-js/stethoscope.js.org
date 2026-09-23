@@ -68,18 +68,6 @@ module.exports = {
               label: "Last.fm",
               to: "docs/integrations/last-fm",
             },
-            {
-              label: "Pocket Casts",
-              to: "docs/integrations/pocket-casts",
-            },
-            {
-              label: "Goodreads",
-              to: "docs/integrations/goodreads",
-            },
-            {
-              label: "Twitter",
-              to: "docs/integrations/twitter",
-            },
           ],
         },
         {
@@ -103,10 +91,6 @@ module.exports = {
           title: "Health integrations",
           items: [
             {
-              label: "Google Fit",
-              to: "docs/integrations/google-fit",
-            },
-            {
               label: "Oura Ring",
               to: "docs/integrations/oura-ring",
             },
@@ -114,6 +98,15 @@ module.exports = {
               label: "Apple Health",
               to: "docs/integrations/apple-health",
             },
+          ],
+        },
+        {
+          title: "Legacy integration reference",
+          items: [
+            { label: "Google Fit", to: "docs/integrations/google-fit" },
+            { label: "Pocket Casts", to: "docs/integrations/pocket-casts" },
+            { label: "Goodreads", to: "docs/integrations/goodreads" },
+            { label: "Twitter/X", to: "docs/integrations/twitter" },
           ],
         },
       ],

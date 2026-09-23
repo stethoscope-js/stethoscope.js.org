@@ -1,50 +1,11 @@
 ---
-title: Pocket Casts
+title: Pocket Casts (legacy)
 ---
 
-## Intro
-
-The Pocket Casts API is used to track your podcast listening history and track library.
-
-## Data points
-
-The following data points are available for this integration:
-
-| Data point | Description       |
-| ---------- | ----------------- |
-| `history`  | Listening history |
-| `library`  | Podcast library   |
-
-```yaml title=".stethoscoperc.yml"
-integrations:
-  pocket-casts:
-    frequency: "daily"
-    history: true
-    library: true
-```
-
-If you want to enable all data points, you can simply use `all` instead:
-
-```yaml title=".stethoscoperc.yml"
-integrations:
-  pocket-casts:
-    frequency: "daily"
-    all: true
-```
-
-## Authentication
-
-:::warning
-This service does not support API key or OAuth authentication and requires your password.
+:::warning Legacy integration — not recommended for new setups
+[Pocket Casts says it has no API available](https://support.pocketcasts.com/knowledge-base/pocket-casts-api). The existing Stethoscope adapter uses an unofficial password-backed login library. Do not add your Pocket Casts password to a new integration based on these old instructions.
 :::
 
-You need to provide your Pocket Casts email address and password to access your data. The npm package [pocketcasts](https://www.npmjs.com/package/pocketcasts) is used to fetch your library and listening history. The package, in turn, sends HTTP requests simulating a login to the web app and uses the generated token to access your data ([see source](https://github.com/coughlanio/pocketcasts/blob/master/src/index.js)).
+The historical integration tracked listening history and the podcast library under `data/pocket-casts-podcasts/`. Existing data stays readable; this documentation change does not turn off existing configurations, remove the adapter, or delete files. A green scheduled workflow does not prove that an unofficial login succeeded: check the latest [run manifest](/docs/understanding-data) for the adapter's outcome.
 
-## Environment variables
-
-| Environment variable    | Description |
-| ----------------------- | ----------- |
-| `POCKET_CASTS_USERNAME` | Username    |
-| `POCKET_CASTS_PASSWORD` | Password    |
-
-<a href="/docs/integrations/pocket-casts"><img class="logos" alt="Pocket Casts" src="https://stethoscope.js.org/branding/integrations/pocket-casts.png" /></a>
+The original keys and setup instructions are retained in the [historical documentation in Git](https://github.com/stethoscope-js/stethoscope.js.org/blob/0b06584c4f2c1a0cd1acdd347678c8f099de67f2/docs/integrations/pocket-casts.md) for interpreting older repositories, **not** for new onboarding.

@@ -54,7 +54,7 @@ There is sample data available in the `data` directory. You have to start by **d
 
 The `.stethoscoperc.yml` file is used as the central configuration store. In that file, you can specify which services you want to connect to using [Integrations](/docs/integrations).
 
-Enter the name (slugified) of each services you intend to use. In the following example, we have enabled all tracking data points for four integrations, all fetching the data every day:
+Enter the slug of each service you intend to use. For example, these four integrations fetch enabled data each day:
 
 ```yaml title=".stethoscoperc.yml"
 integrations:
@@ -64,13 +64,15 @@ integrations:
   last-fm:
     frequency: "daily"
     all: true
-  pocket-casts:
+  wakatime:
     frequency: "daily"
     all: true
-  google-fit:
+  clockify:
     frequency: "daily"
     all: true
 ```
+
+Google Fit, Pocket Casts, Goodreads, and Twitter/X appear in older repositories and remain documented for reading existing data, but are **not recommended for new setups**. See the [integration status notes](/docs/integrations) before enabling a service; a successful scheduled action run alone does not prove that each adapter succeeded. Check the latest [run manifest](./understanding-data) for per-adapter outcomes.
 
 ### Add tracking data points
 
